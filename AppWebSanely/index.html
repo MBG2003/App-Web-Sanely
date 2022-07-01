@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanely</title>
+    <link rel="stylesheet" href="/css/estilos.css" />
+  </head>
+  <body onload="cargarPagina()">
+    <div class="cabecero">
+      <div class="cabecero-titulo">Sanely</div>
+      <div class="sesion">
+        <button class="sesion-btn">
+          <ion-icon name="person-outline"></ion-icon>
+        </button>
+        <button class="sesion-btn">
+          <ion-icon name="person-add-outline"></ion-icon>
+        </button>
+      </div>
+    </div>
+    <div class="navegacion">
+      <button class="navegacion-btn" onclick="abrirInicio()">Inicio</button>
+      <button class="navegacion-btn" onclick="abrirProductos()">Sobre nosotros</button>
+      
+      <button class="navegacion-btn derecha">
+        <ion-icon name="cart-outline"></ion-icon>
+        <div id="cantProductosCarrito">1</div>
+      </button>
+    </div>
+    <div class="contenedor">
+      <div class="contenedor-filtros">
+        <div class="contenedor-filtros-titulo">Filtros</div>
+        <div></div>
+        <form>
+          <select multiple="true" id="tipo">
+            <option value="Madera">Madera</option>
+            <option value="Country">Country</option>
+            <option value="Ninos">Niños</option>
+          </select>
+        </form>
+      </div>
+      <div class="contenedor-productos" id="productos"></div>
+    </div>
+    <div class="pie_pagina">
+      <div class="pie_pagina-pqrs">
+        <form onsubmit="return false;">
+          <input type="text" placeholder="Ingrese aquí sus inquietudes..."/>
+        </form>
+      </div>
+      <div class="pie_pagina-redes">
+        <a href="https://www.facebook.com/Sanely-Arte-Y-Decoración-106072647860990" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/sanelyarteydecoracion/" target="_blank">Instagram</a>
+      </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="/js/Producto.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
